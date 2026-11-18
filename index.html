@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal academic portfolio of Nomel Dave Geanga, BSIT-2B student at Polytechnic College of Botolan." />
+  <title>Nomel Dave Geanga | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Nomel Geanga Home">
+        <span class="brand-monogram" aria-hidden="true">NDG</span>
+        <span class="brand-text">
+          <span class="brand-name">NOMEL GEANGA</span>
+          <span class="brand-subtitle">PERSONAL PORTFOLIO</span>
+        </span>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button
+        type="button"
+        class="nav-toggle"
+        id="navToggle"
+        aria-expanded="false"
+        aria-controls="primaryNav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#achievements" class="nav-link" data-section="achievements">Achievement</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+
+        <!-- Functional Search Bar -->
+        <div class="search-wrapper" role="search">
+          <label for="portfolioSearch" class="sr-only">Search portfolio content</label>
+          <div class="search-input-group">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+              <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <input
+              type="search"
+              id="portfolioSearch"
+              class="search-input"
+              placeholder="Search..."
+              autocomplete="off"
+              aria-describedby="searchStatus"
+            />
+            <button type="button" id="clearSearchBtn" class="clear-search-btn" hidden aria-label="Clear search">
+              &times;
+            </button>
+          </div>
+          <div id="searchStatus" class="search-results-dropdown" role="region" aria-live="polite" hidden></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <!-- HOME SECTION -->
+    <section id="home" class="portfolio-section" aria-labelledby="home-pill">
+      <div class="section-pill-wrapper">
+        <h1 id="home-pill" class="section-pill">Home</h1>
+      </div>
+
+      <div class="two-col-grid home-grid">
+        <figure class="media-card">
+          <!-- Replace src="assets/profile.jpg" with your actual portrait photo path -->
+          <img
+            src="assets/profile.jpg"
+            alt="Graduation portrait of Nomel Dave Geanga in white toga and academic sash"
+            class="profile-photo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="image-fallback" style="display: none;" role="img" aria-label="Profile portrait placeholder">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+            <span>Add your photo at <code>assets/profile.jpg</code></span>
+          </div>
+        </figure>
+
+        <div class="intro-callout searchable-item" data-search-title="Introduction & Education">
+          <p class="intro-quote">
+            “This portfolio’s main purpose is to share more about myself and who I am. I am
+            <strong>Nomel Dave Geanga</strong>, from the town of <strong>Botolan</strong>, currently studying at
+            <strong>Polytechnic College of Botolan (PCB)</strong> as a <strong>BSIT-2B</strong> student.”
+          </p>
+          <div class="education-badge">
+            <span class="badge-label">Academic Track</span>
+            <span class="badge-value">Bachelor of Science in Information Technology (BSIT-2B) &bull; PCB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="portfolio-section" aria-labelledby="about-pill">
+      <div class="section-pill-wrapper">
+        <h2 id="about-pill" class="section-pill">About</h2>
+      </div>
+
+      <div class="two-col-grid about-grid">
+        <figure class="media-card placeholder-visual" aria-label="Academic journey visual">
+          <!-- Replace with a personal campus or hobby photo, or keep this clean geometric illustration -->
+          <svg class="landscape-svg" viewBox="0 0 320 220" role="img" aria-label="Minimalist academic horizon illustration">
+            <rect width="320" height="220" rx="16" fill="#d3e3f8" />
+            <circle cx="235" cy="65" r="22" fill="#ffffff" opacity="0.9" />
+            <polyline
+              points="35,175 115,95 175,148 225,112 285,175"
+              fill="none"
+              stroke="#ffffff"
+              stroke-width="8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </figure>
+
+        <div class="about-content searchable-item" data-search-title="About Me & Mindset">
+          <p class="about-text">
+            I am a curious and dedicated student who enjoys learning about history, science, astronomy, and the world around me. I love exploring new ideas, solving puzzles, and understanding how things work. I believe that learning is a continuous journey, and I strive to improve my knowledge, creativity, and skills through every experience.
+          </p>
+          <ul class="trait-tags" aria-label="Core personal traits">
+            <li>Curiosity</li>
+            <li>Dedication</li>
+            <li>Continuous Learning</li>
+            <li>Creativity</li>
+            <li>Personal Development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ACHIEVEMENTS AND HOBBIES SECTION -->
+    <section id="achievements" class="portfolio-section" aria-labelledby="achievements-pill">
+      <div class="section-pill-wrapper">
+        <h2 id="achievements-pill" class="section-pill">Achievements and Hobbies</h2>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1: Continuous Learning -->
+        <article class="feature-card searchable-item" data-search-title="Continuous Learning">
+          <div class="card-illustration bg-sky" aria-hidden="true">
+            <svg viewBox="0 0 240 120" class="card-svg">
+              <!-- Classical Pillar (History) -->
+              <rect x="28" y="45" width="32" height="52" rx="3" fill="#e8cfa0" stroke="#7c633a" stroke-width="2" />
+              <rect x="22" y="38" width="44" height="8" rx="2" fill="#d4b47c" stroke="#7c633a" stroke-width="2" />
+              <rect x="22" y="95" width="44" height="8" rx="2" fill="#d4b47c" stroke="#7c633a" stroke-width="2" />
+              <!-- Globe (Geography & World Knowledge) -->
+              <circle cx="120" cy="68" r="28" fill="#63b3ed" stroke="#2b6cb0" stroke-width="2" />
+              <path d="M104,54 Q118,62 112,78 Q124,84 134,70 Q138,56 122,48 Z" fill="#68d391" />
+              <ellipse cx="120" cy="68" rx="28" ry="10" fill="none" stroke="#2b6cb0" stroke-width="1.5" />
+              <!-- Balance Scale (Law & Social Sciences) -->
+              <line x1="194" y1="42" x2="194" y2="98" stroke="#4a5568" stroke-width="2.5" />
+              <line x1="172" y1="54" x2="216" y2="54" stroke="#4a5568" stroke-width="2.5" />
+              <polygon points="172,54 164,74 180,74" fill="#f6ad55" stroke="#c05621" stroke-width="1.5" />
+              <polygon points="216,54 208,74 224,74" fill="#f6ad55" stroke="#c05621" stroke-width="1.5" />
+            </svg>
+          </div>
+          <div class="card-body">
+            <h3>Continuous Learning</h3>
+            <p>
+              I recognize that I still have a lot to learn, so I continue to study and verify truth across subjects such as evolution, law, social sciences, history, and geography.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2: Creativity -->
+        <article class="feature-card searchable-item" data-search-title="Creativity & Astronomy">
+          <div class="card-illustration bg-cosmos" aria-hidden="true">
+            <svg viewBox="0 0 240 120" class="card-svg">
+              <!-- Stars -->
+              <circle cx="32" cy="25" r="2" fill="#ffffff" />
+              <circle cx="195" cy="22" r="2.5" fill="#fbd38d" />
+              <circle cx="145" cy="95" r="1.8" fill="#ffffff" />
+              <circle cx="215" cy="82" r="2" fill="#90cdf4" />
+              <!-- Ringed Planet (Astronomy) -->
+              <circle cx="78" cy="60" r="22" fill="#f6ad55" />
+              <ellipse cx="78" cy="60" rx="38" ry="9" transform="rotate(-18 78 60)" fill="none" stroke="#fbd38d" stroke-width="4" />
+              <!-- Orbiting Moon / Quantum Particle -->
+              <path d="M112,72 Q138,92 162,72" fill="none" stroke="#90cdf4" stroke-width="2" stroke-dasharray="4 4" />
+              <circle cx="168" cy="68" r="11" fill="#63b3ed" stroke="#ebf8ff" stroke-width="2" />
+              <!-- Puzzle Piece (Logic & Problem Solving) -->
+              <rect x="192" y="42" width="24" height="24" rx="4" fill="#9f7aea" stroke="#e9d8fd" stroke-width="1.5" />
+              <circle cx="204" cy="40" r="5" fill="#9f7aea" />
+            </svg>
+          </div>
+          <div class="card-body">
+            <h3>Creativity</h3>
+            <p>
+              I love solving puzzles and exploring space topics such as astronomy, planetary science, and the foundational concepts of quantum physics.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3: Achievements (Editable & Non-Fabricated) -->
+        <article class="feature-card searchable-item" data-search-title="Achievements & Milestones">
+          <div class="card-illustration bg-mint" aria-hidden="true">
+            <div class="check-badge">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-header-inline">
+              <h3>Achievements</h3>
+              <button
+                type="button"
+                id="toggleAchievementEditor"
+                class="btn-subtle-edit"
+                aria-expanded="false"
+                aria-controls="achievementEditorPanel"
+              >
+                + Add / Edit
+              </button>
+            </div>
+            <p>
+              Recognizing milestones and progress—every step forward, academic honor, and personal breakthrough is worth documenting and celebrating.
+            </p>
+
+            <!-- User-Editable Achievement List (Starts empty of fabricated awards; customizable via UI or HTML) -->
+            <ul id="achievementList" class="achievement-list" aria-label="Recorded achievements and certificates">
+              <!-- Example item template (uncomment in HTML or add interactively via the button above):
+              <li>
+                <span>Academic Honors (Grade 12)</span>
+                <button type="button" class="remove-item-btn" aria-label="Remove achievement">&times;</button>
+              </li>
+              -->
+            </ul>
+            <p id="achievementEmptyHint" class="empty-hint">
+              No specific awards added yet. Click <strong>+ Add / Edit</strong> to record your certificates, honors, or milestones.
+            </p>
+
+            <!-- Interactive Add Achievement Form -->
+            <form id="achievementEditorPanel" class="achievement-editor" hidden>
+              <label for="newAchievementInput" class="sr-only">Enter an award, certificate, or milestone</label>
+              <div class="editor-row">
+                <input
+                  type="text"
+                  id="newAchievementInput"
+                  placeholder="e.g., With Honors – Grade 12"
+                  maxlength="100"
+                />
+                <button type="submit" class="btn-primary-sm">Add</button>
+              </div>
+              <small class="editor-note">Saved locally in your browser. Edit <code>index.html</code> to make entries permanent.</small>
+            </form>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="portfolio-section" aria-labelledby="contact-pill">
+      <div class="section-pill-wrapper">
+        <h2 id="contact-pill" class="section-pill">Contact Information</h2>
+      </div>
+
+      <div class="cards-grid contact-grid">
+        <!-- Column 1: Functional Contact Form with Validation & Mailto Fallback -->
+        <div class="contact-card">
+          <h3>Send a message</h3>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="senderName" class="sr-only">Your Name</label>
+              <input
+                type="text"
+                id="senderName"
+                name="name"
+                placeholder="Your name"
+                required
+                aria-required="true"
+              />
+              <span class="field-error" id="nameError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail" class="sr-only">Your Email Address</label>
+              <input
+                type="email"
+                id="senderEmail"
+                name="email"
+                placeholder="Your email address"
+                required
+                aria-required="true"
+              />
+              <span class="field-error" id="emailError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" class="sr-only">Your Message</label>
+              <textarea
+                id="senderMessage"
+                name="message"
+                rows="3"
+                placeholder="Write your message..."
+                required
+                aria-required="true"
+              ></textarea>
+              <span class="field-error" id="messageError" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn-submit">Prepare Message</button>
+
+            <div id="formFeedback" class="form-feedback" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+
+        <!-- Column 2: Social Media Links (Configurable via data attributes or JS config) -->
+        <div class="contact-card">
+          <h3>Contact info</h3>
+          <ul class="social-list" id="socialLinksList">
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-social="facebook"
+                aria-label="Visit Nomel Dave Geanga on Facebook"
+              >
+                <span class="social-icon icon-fb" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" fill="currentColor" />
+                  </svg>
+                </span>
+                <span class="social-handle">Nomel Dave Geanga</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.tiktok.com/@azazzeeell"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-social="tiktok"
+                aria-label="Visit azazzeeell on TikTok"
+              >
+                <span class="social-icon icon-tt" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" fill="currentColor" />
+                  </svg>
+                </span>
+                <span class="social-handle">azazzeeell</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://x.com/Nomel_Dave"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-social="x"
+                aria-label="Visit @Nomel_Dave on X"
+              >
+                <span class="social-icon icon-x" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor" />
+                  </svg>
+                </span>
+                <span class="social-handle">@Nomel_Dave</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Editable Email & Location Details -->
+        <div class="contact-card searchable-item" data-search-title="Contact Details & Location">
+          <h3>Contact Information</h3>
+          <dl class="contact-details-list">
+            <div class="detail-row">
+              <dt>Email:</dt>
+              <dd>
+                <a href="mailto:Nomeldavegeanga@pcb.edu.ph" id="ownerEmailLink">
+                  Nomeldavegeanga@pcb.edu.ph
+                </a>
+              </dd>
+            </div>
+            <div class="detail-row">
+              <dt>Location:</dt>
+              <dd id="ownerLocation">Botolan, Zambales, Philippines</dd>
+            </div>
+            <div class="detail-row">
+              <dt class="sr-only">Availability:</dt>
+              <dd class="availability-note">Available for learning and collaboration</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentYear">2026</span> Nomel Geanga &ndash; Personal Portfolio</p>
+      <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
